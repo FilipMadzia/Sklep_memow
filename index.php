@@ -19,6 +19,20 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <!-- pasek nawigacji -->
+    <?php include("navbar.html");?>
+
+    <img src="img/no_database.jpg">
+    <img src="img/no_database.jpg">
+    <img src="img/no_database.jpg">
+    <img src="img/no_database.jpg">
+    <img src="img/no_database.jpg">
+    <img src="img/no_database.jpg">
+    <img src="img/no_database.jpg">
+    <img src="img/no_database.jpg">
+    <img src="img/no_database.jpg">
+    <img src="img/no_database.jpg">
+    <img src="img/no_database.jpg">
+    <img src="img/no_database.jpg">
 </body>
 </html>

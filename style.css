@@ -1,5 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik&display=swap');
 
+body
+{
+    margin: 0;
+}
+
+/* index.php */
+.nav
+{
+    opacity: 99%;
+    position: fixed;
+    font-family: "Rubik";
+    margin-top: 0;
+}
+.nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav li
+{
+    float: left;
+}
+#navbar
+{
+    width: 100%;
+    background-color: #a2a2a2;
+}
+#navbar h1
+{
+    margin: 0;
+}
+.nav li a {
+    display: block;
+    color: #2e2e2e;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+.nav li a:hover
+{
+    cursor: pointer;
+    background-color: #5e5e5e;
+    color: #ffffff;
+}
 
 /* error.php */
 .error h1
