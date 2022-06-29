@@ -46,6 +46,17 @@ body
     background-color: #5e5e5e;
     color: #ffffff;
 }
+#logout
+{
+    float: right;
+}
+
+/* login.php */
+#login_form
+{
+    text-align: center;
+    vertical-align: middle;
+}
 
 /* error.php */
 .error h1

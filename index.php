@@ -1,5 +1,6 @@
 <?php
     include("config.php");
+    session_start();
 
     $conn = mysqli_connect($hostname, $user, $password, $database);
     if(!$conn)
@@ -20,19 +21,15 @@
 </head>
 <body>
     <!-- pasek nawigacji -->
-    <?php include("navbar.html");?>
-
-    <img src="img/no_database.jpg">
-    <img src="img/no_database.jpg">
-    <img src="img/no_database.jpg">
-    <img src="img/no_database.jpg">
-    <img src="img/no_database.jpg">
-    <img src="img/no_database.jpg">
-    <img src="img/no_database.jpg">
-    <img src="img/no_database.jpg">
-    <img src="img/no_database.jpg">
-    <img src="img/no_database.jpg">
-    <img src="img/no_database.jpg">
-    <img src="img/no_database.jpg">
+    <?php
+        if(isset($_SESSION['login']))
+        {
+            include("navbar_loged.html");
+        }
+        else
+        {
+            include("navbar.html");
+        }
+    ?>
 </body>
 </html>
