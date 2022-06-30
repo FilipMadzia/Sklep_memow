@@ -1,6 +1,5 @@
-<?php
-    include("config.php")
-?>
+<?php include("config.php");?>
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -24,17 +23,17 @@
     ?>
 
     <div class="login_panel">
-        <p class="header"><b>LOGOWANIE</b></p>
+        <p class="header"><b>Logowanie</b></p>
         <form action="login_handler.php" method="post">
             <fieldset>
                 <br><br>
                 <div class="form-floating">
-                    <input class="form-control" type="text" name="login" id="login" placeholder="Login" required>
+                    <input class="form-control" type="text" name="login" maxlength="32" id="login" placeholder="Login" required>
                     <label for="login">Login: </label>
                 </div>
                 <br><br>
                 <div class="form-floating">
-                    <input class="form-control" type="password" name="password" id="password" placeholder="Hasło" required>
+                    <input class="form-control" type="password" name="password" maxlength="32" id="password" placeholder="Hasło" required>
                     <label for="password">Hasło: </label>
                 </div>
                 <br><br>

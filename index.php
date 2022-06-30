@@ -1,13 +1,14 @@
 <?php
-    include("config.php");
-    session_start();
+include("config.php");
+session_start();
 
-    $conn = mysqli_connect($hostname, $user, $password, $database);
-    if(!$conn)
-    {
-        header("Location: ".$error_page."?error=".mysqli_connect_error());
-    }
+$conn = mysqli_connect($hostname, $user, $password, $database);
+if(!$conn)
+{
+    header("Location: ".$error_page."?error=".mysqli_connect_error());
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
