@@ -3,6 +3,7 @@
 body
 {
     margin: 0;
+    font-family: "Rubik";
 }
 
 /* index.php */
@@ -10,7 +11,6 @@ body
 {
     opacity: 99%;
     position: fixed;
-    font-family: "Rubik";
     margin-top: 0;
 }
 .nav ul
@@ -52,17 +52,44 @@ body
 }
 
 /* login.php */
-#login_form
+.login_panel
 {
-    text-align: center;
-    vertical-align: middle;
+	text-align: center;
+	font-size: 15px;
+	margin: auto;
+	width: 300px;
+    transform: translate(0, 50%);
+}
+p.header
+{
+	color: black;
+	font-size: 50px;
+	letter-spacing: 2px;
+}
+.form-control, .form-control:focus
+{
+	border: 2px solid #000000;
+	border-radius: 20px;
+	box-shadow: none;
+}
+.btn.btn-primary
+{
+    background-color: #393939;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    height: 50px;
+    width: 300px;
+}
+#info a
+{
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* error.php */
 .error h1
 {
     text-align: center;
-    font-family: "Rubik";
 }
 .error img
 {
