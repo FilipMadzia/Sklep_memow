@@ -27,7 +27,7 @@ if(!$conn)
     <?php
         if(isset($_SESSION['login']))
         {
-            include("navbar_loged.html");
+            include("navbar_loged.php");
         }
         else
         {
