@@ -25,11 +25,12 @@ $row = mysqli_fetch_array($result);
 if($row["login"] == $u_login && $u_password == $row["password"])
 {
     $_SESSION["login"] = $row["login"];
-    header('Location: index.php');
+    $_SESSION["nickname"] = $row["nickname"];
+    header("Location: index.php");
 }
 else
 {
     $_SESSION["error_message"] = "Nieprawidłowe hasło lub login";
-    header('Location: login.php');
+    header("Location: login.php");
 }
 mysqli_close($conn);

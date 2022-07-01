@@ -1,4 +1,7 @@
-<?php include("config.php");?>
+<?php
+    include("config.php");
+    session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="pl">
@@ -24,6 +27,14 @@
 
     <div class="login_panel">
         <p class="header"><b>Logowanie</b></p>
+
+        <?php
+            if(isset($_SESSION["error_message"]))
+            {
+                echo '<p id="error">'.$_SESSION["error_message"].'</p>';
+                unset($_SESSION["error_message"]);
+            }  
+        ?>
         <form action="login_handler.php" method="post">
             <fieldset>
                 <br><br>

@@ -85,6 +85,11 @@ p.header
     text-decoration: none;
     font-weight: bold;
 }
+#error
+{
+    color: #d43030;
+    font-weight: bold;
+}
 
 /* error.php */
 .error h1
