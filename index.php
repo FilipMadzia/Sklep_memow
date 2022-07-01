@@ -25,14 +25,14 @@ if(!$conn)
 <body>
     <!-- pasek nawigacji -->
     <?php
-        if(isset($_SESSION['login']))
-        {
-            include("navbar_loged.php");
-        }
-        else
-        {
-            include("navbar.html");
-        }
+    if(isset($_SESSION['login']))
+    {
+        include("navbar_loged.php");
+    }
+    else
+    {
+        include("navbar.html");
+    }
     ?>
 </body>
 </html>

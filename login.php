@@ -29,11 +29,11 @@
         <p class="header"><b>Logowanie</b></p>
 
         <?php
-            if(isset($_SESSION["error_message"]))
-            {
-                echo '<p id="error">'.$_SESSION["error_message"].'</p>';
-                unset($_SESSION["error_message"]);
-            }  
+        if(isset($_SESSION["error_message"]))
+        {
+            echo '<p id="error">'.$_SESSION["error_message"].'</p>';
+            unset($_SESSION["error_message"]);
+        }  
         ?>
         <form action="login_handler.php" method="post">
             <fieldset>
