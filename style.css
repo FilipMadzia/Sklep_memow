@@ -51,6 +51,16 @@ body
     float: right;
 }
 
+/* memes.php */
+.meme
+{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    margin: auto;
+    transform: translate(0, 60%);
+}
+
 /* login.php */
 .login_panel
 {
@@ -58,27 +68,31 @@ body
 	font-size: 15px;
 	margin: auto;
 	width: 300px;
-    transform: translate(0, 50%);
+    transform: translate(0, 60%);
 }
 p.header
 {
-	color: black;
+	color: #2e2e2e;
 	font-size: 50px;
 	letter-spacing: 2px;
 }
 .form-control, .form-control:focus
 {
-	border: 2px solid #000000;
+    margin-top: 15px;
+	border: 2px solid #5e5e5e;
 	border-radius: 20px;
 	box-shadow: none;
 }
-.btn.btn-primary
+.btn.btn-primary, .btn.btn-primary:focus
 {
-    background-color: #393939;
-    border: 2px solid #000000;
+    margin-top: 10px;
+    background-color: #a2a2a2;
+    border: 2px solid #5e5e5e;
     border-radius: 20px;
     height: 50px;
     width: 300px;
+    color: #2e2e2e;
+    box-shadow: none;
 }
 #info a
 {

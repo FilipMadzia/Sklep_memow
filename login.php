@@ -37,23 +37,19 @@
         ?>
         <form action="login_handler.php" method="post">
             <fieldset>
-                <br><br>
                 <div class="form-floating">
                     <input class="form-control" type="text" name="login" maxlength="32" id="login" placeholder="Login" required>
                     <label for="login">Login: </label>
                 </div>
-                <br><br>
                 <div class="form-floating">
                     <input class="form-control" type="password" name="password" maxlength="32" id="password" placeholder="Hasło" required>
                     <label for="password">Hasło: </label>
                 </div>
-                <br><br>
 
                 <button class="btn btn-primary" type="submit">Zaloguj się</button>
             </fieldset>            
         </form>
 
-        <br>
         <p id="info">Nie masz jeszcze konta?<a href="register.php"> Zarejestruj się</a></p>
     </div>
 </body>
