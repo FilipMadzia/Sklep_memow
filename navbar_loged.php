@@ -5,7 +5,7 @@
         <li><a href="settings.php">Ustawienia</a></li>
         <li id="logout">
             <?php
-                echo "<a href='logout.php'>Wyloguj się z konta: ".$_SESSION["nickname"]."</a>";
+            echo "<a href='logout.php'>Wyloguj się z konta: ".$_SESSION["nickname"]."</a>";
             ?>
         </li>
     </ul>
