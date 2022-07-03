@@ -35,16 +35,24 @@ if(!$conn)
     ?>
 
     <!-- testy wyświetlania obrazków -->
-    <div class="meme" id="test">
-        <?php
-        $id_user = $_SESSION["id_user"];
-        $meme_path = "SELECT path FROM memes WHERE id_user = '$id_user'";
+    <?php
+    $id_user = $_SESSION["id_user"];
+    $meme_path = "SELECT path, title FROM memes WHERE id_user = '$id_user'";
 
-        $result = mysqli_fetch_array(mysqli_query($conn, $meme_path));
-        $meme = $result["path"];
+    $sql = mysqli_query($conn, $meme_path);
 
-        echo "<img src='$meme'>"
+    while($row = mysqli_fetch_array($sql))
+    {
         ?>
-    </div>
+        <div class="meme" id="test">
+            <?php
+            $meme = $row["path"];
+            $meme_title = $row["title"];
+
+            echo "<p>$meme_title</p>";
+            echo "<img src='$meme'>"
+            ?>
+        </div>
+    <?php }?>
 </body>
 </html>
