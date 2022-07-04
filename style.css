@@ -55,11 +55,18 @@ body
 /* memes.php */
 .meme
 {
-    width: 50%;
+    margin: 10px, 0;
+    padding: 50px;
+    padding-top: 100px;
 }
 .meme img
 {
-    width: inherit;
+    width: 300px;
+}
+.text
+{
+    float: right;
+    position: sticky;
 }
 
 /* login.php */

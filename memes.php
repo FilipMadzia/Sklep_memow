@@ -37,20 +37,22 @@ if(!$conn)
     <!-- testy wyświetlania obrazków -->
     <?php
     $id_user = $_SESSION["id_user"];
-    $meme_path = "SELECT path, title FROM memes WHERE id_user = '$id_user'";
+    $meme = "SELECT * FROM memes WHERE id_user = '$id_user'";
 
-    $sql = mysqli_query($conn, $meme_path);
+    $sql = mysqli_query($conn, $meme);
 
     while($row = mysqli_fetch_array($sql))
     {
         ?>
         <div class="meme" id="test">
             <?php
-            $meme = $row["path"];
+            $meme_path = $row["path"];
             $meme_title = $row["title"];
+            $meme_prize = $row["prize"];
 
-            echo "<p>$meme_title</p>";
-            echo "<img src='$meme'>"
+            echo "<p class='text'>$meme_title</p>";
+            echo "<p class='text'>$meme_prize</p>";
+            echo "<img src='$meme_path'>"
             ?>
         </div>
     <?php }?>
